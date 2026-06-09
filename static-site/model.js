@@ -147,6 +147,20 @@ export class SignRecognizer {
       result.prediction = this.classNames[idxs[0]];
       result.confidence = probs[idxs[0]];
       result.top_predictions = idxs.map((i) => ({ label: this.classNames[i], confidence: probs[i] }));
+
+      // ── Diagnostic log (throttled). Disable with window.SIGN_DEBUG = false. ──
+      this._dbg = (this._dbg || 0) + 1;
+      if (window.SIGN_DEBUG !== false && this._dbg % 15 === 0) {
+        const slot0 = feat[OFF_MASK].toFixed(1);     // 1=left-slot hand present
+        const slot1 = feat[OFF_MASK + 1].toFixed(1); // 1=right-slot hand present
+        const poseSeen = pose ? 'pose✓' : 'pose✗';
+        const faceSeen = face ? 'face✓' : 'face✗';
+        console.log(
+          `[sign] hands=${(hands || []).length} labels=${(hd || []).map((h) => h.label).join(',')} ` +
+          `slots=[${slot0},${slot1}] ${poseSeen} ${faceSeen} | ` +
+          `top: ${result.top_predictions.map((p) => `${p.label} ${(p.confidence * 100).toFixed(0)}%`).join('  ')}`
+        );
+      }
       this._lastPrediction = {
         prediction: result.prediction,
         confidence: result.confidence,
