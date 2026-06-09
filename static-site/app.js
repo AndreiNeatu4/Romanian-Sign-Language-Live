@@ -202,9 +202,16 @@ async function frameTick() {
       const poseRes = poseLandmarker.detectForVideo(video, ts);
 
       const hands = handRes.landmarks || [];
-      const handedness = (handRes.handednesses || handRes.handedness || []).map((h) => ({
-        label: h[0]?.categoryName, score: h[0]?.score ?? 0,
-      }));
+      // MediaPipe Tasks reports true anatomical handedness; the model was trained
+      // on MediaPipe Solutions labels (which assume a mirrored image), so the same
+      // physical hand lands in the opposite slot. Swap Left<->Right to match.
+      // Toggle live from the console: window.SWAP_HANDS = false to disable.
+      const swap = window.SWAP_HANDS !== false; // default ON
+      const handedness = (handRes.handednesses || handRes.handedness || []).map((h) => {
+        let label = h[0]?.categoryName;
+        if (swap) label = label === 'Left' ? 'Right' : (label === 'Right' ? 'Left' : label);
+        return { label, score: h[0]?.score ?? 0 };
+      });
       const face = (faceRes.faceLandmarks && faceRes.faceLandmarks[0]) || null;
       const pose = (poseRes.landmarks && poseRes.landmarks[0]) || null;
 
