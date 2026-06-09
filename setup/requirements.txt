@@ -1,0 +1,22 @@
+# Core dependencies for gesture data extraction
+opencv-python>=4.8.0
+mediapipe>=0.10.14
+numpy>=1.24.0,<2.0
+tqdm>=4.65.0
+
+# PyTorch for GPU-accelerated training (CUDA 12.1 — RTX 4080)
+# Install via: pip install -r requirements.txt
+torch==2.3.1+cu121
+torchvision==0.18.1+cu121
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+# Additional ML tools
+scikit-learn>=1.3.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Data augmentation (optional but recommended)
+albumentations>=1.3.0
+
+# For model export and optimization
+onnx>=1.14.0

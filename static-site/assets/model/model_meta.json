@@ -1,0 +1,6 @@
+{
+  "sequence_length": 45,
+  "num_features": 216,
+  "num_classes": 30,
+  "output": "probabilities"
+}

@@ -1,0 +1,6 @@
+# Cloudflare Pages / Netlify headers.
+# Long-cache the immutable model + media; the HTML/JS stay revalidated.
+/assets/model/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/alphabet/*
+  Cache-Control: public, max-age=2592000

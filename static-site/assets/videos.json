@@ -1,0 +1,124 @@
+{
+  "videos": [
+    {
+      "letter": "A",
+      "url": "./assets/alphabet/A/a.mp4"
+    },
+    {
+      "letter": "Ă",
+      "url": "./assets/alphabet/Ă/Ă.mp4"
+    },
+    {
+      "letter": "Â",
+      "url": "./assets/alphabet/Â/Â.mp4"
+    },
+    {
+      "letter": "B",
+      "url": "./assets/alphabet/B/B.mp4"
+    },
+    {
+      "letter": "C",
+      "url": "./assets/alphabet/C/C.mp4"
+    },
+    {
+      "letter": "D",
+      "url": "./assets/alphabet/d/d.mp4"
+    },
+    {
+      "letter": "E",
+      "url": "./assets/alphabet/e/e.mp4"
+    },
+    {
+      "letter": "F",
+      "url": "./assets/alphabet/f/f.mp4"
+    },
+    {
+      "letter": "G",
+      "url": "./assets/alphabet/g/g.mp4"
+    },
+    {
+      "letter": "H",
+      "url": "./assets/alphabet/h/h.mp4"
+    },
+    {
+      "letter": "I",
+      "url": "./assets/alphabet/i/i.mp4"
+    },
+    {
+      "letter": "J",
+      "url": "./assets/alphabet/j/j.mp4"
+    },
+    {
+      "letter": "K",
+      "url": "./assets/alphabet/k/k.mp4"
+    },
+    {
+      "letter": "L",
+      "url": "./assets/alphabet/l/l.mp4"
+    },
+    {
+      "letter": "M",
+      "url": "./assets/alphabet/m/m.mp4"
+    },
+    {
+      "letter": "N",
+      "url": "./assets/alphabet/n/n.mp4"
+    },
+    {
+      "letter": "O",
+      "url": "./assets/alphabet/o/o.mp4"
+    },
+    {
+      "letter": "P",
+      "url": "./assets/alphabet/p/p.mp4"
+    },
+    {
+      "letter": "Q",
+      "url": "./assets/alphabet/q/q.mp4"
+    },
+    {
+      "letter": "R",
+      "url": "./assets/alphabet/r/r.mp4"
+    },
+    {
+      "letter": "S",
+      "url": "./assets/alphabet/s/s.mp4"
+    },
+    {
+      "letter": "Ș",
+      "url": "./assets/alphabet/Ș/Ș.mp4"
+    },
+    {
+      "letter": "T",
+      "url": "./assets/alphabet/T/T.mp4"
+    },
+    {
+      "letter": "Ț",
+      "url": "./assets/alphabet/Ț/Ț.mp4"
+    },
+    {
+      "letter": "U",
+      "url": "./assets/alphabet/U/U.mp4"
+    },
+    {
+      "letter": "V",
+      "url": "./assets/alphabet/V/V.mp4"
+    },
+    {
+      "letter": "W",
+      "url": "./assets/alphabet/W/W.mp4"
+    },
+    {
+      "letter": "X",
+      "url": "./assets/alphabet/X/X.mp4"
+    },
+    {
+      "letter": "Y",
+      "url": "./assets/alphabet/Y/Y.mp4"
+    },
+    {
+      "letter": "Z",
+      "url": "./assets/alphabet/Z/Z.mp4"
+    }
+  ]
+}
